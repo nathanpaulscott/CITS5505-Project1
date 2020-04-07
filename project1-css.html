@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap css imports-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- local css imports-->
+        <link rel="stylesheet" type="text/css" href="./nathans_css.css"/>
+
+        <title>Project 1 - Nathan Scott</title>
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-sm-1 header_left align-self-start">
+                    CSS
+                </div>
+                <div class="col-sm-10 header_main align-self-center">
+                    CSS
+                </div>
+                <div class="col-sm-1 header_right align-self-start">
+                    <a href="./project1-bio.html"><i class="fas fa-home"></i></a>
+                </div>
+            </div> <!--end of row-->
+
+
+            <div class="row sticky-top">
+                <div class="col-sm-12 header_nav">
+                    <nav class="navbar navbar-dark navbar-expand-sm">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <!--<ul class="nav navbar-nav flex-column">-->
+                            <ul class="nav navbar-nav">
+                                <li><a href="./project1-html.html">HTML</a></li>
+                                <li class="active"><a href="./project1-css.html">CSS</a></li>
+                                <li><a href="./project1-js.html">JS</a></li>
+                                <li><a href="./project1-bio.html">Bio</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 l_side">
+                </div> <!--end of l_side-->
+
+                <div class="col-sm-8 content">
+                    <div class="sticky-top">
+                        <button id="collapse_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-up"></i>
+                        </button>
+                        <button id="expand_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+
+                    <img class="inline-float" src="./images/css.png" alt="CSS Logo"/>
+                    <h2>CSS - Purpose and Motivation</h2>
+
+                    <h5 id="test" data-toggle="collapse" data-target="#p1" aria-expanded="false" aria-controls="p1">
+                        What is CSS
+                    </h5>
+                    <div class="collapse multicollapse" id="p1">
+                        <p>
+                            CSS (Cascading Style Sheets) is a text based language used to primarily control how content is rendered on HTML webpages.  It doesn't care about the content of an HTML webpage, it only cares about how it can assign styling to the elements of the webpage.  CSS is the second member of the holy trinity of the web, i.e. HTML-CSS-Javascript.  The syntatic construct is:
+                        </p>
+                        <div class="card card-body bg-light snippet">
+                            selector {<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;style_attribute: value;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;style_attribute: value;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;style_attribute: value;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;. . . . .<br/>                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;style_attribute: value;<br/>
+                            }
+                        </div>
+                        <p>
+                            CSS is said to have been proposed as far back as 1994 by Håkon Wium Lie (<a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>), a collegue of Tim Berners-Lee. however, even after the first iteration being released by W3C in 1996, widespread browser adoption did not occur until 1999-2000.
+                        </p>
+                    </div>
+
+                    <h5 id="test2" data-toggle="collapse" data-target="#p2" aria-expanded="false" aria-controls="p2">
+                        Content and Presentation
+                    </h5>
+                    <div class="collapse multicollapse" id="p2">
+                        <p>
+                            Originally HTML had rudimentary styling capabilities.  It became clear that managing larger complex websites with in-line specification of style in each tag was problematic on various levels from code modularity to style consistency, not to mention that the limited styling available in HTML made all websites look stylistically similar and boring.  
+                        </p>
+                        <div class="css_link">
+                            See <a class="css_link_hot" href="./project1-no_css.html">this</a> page without CSS.
+                        </div>                            
+                        <p>
+                            By introducing CSS and allowing style to be configured from a separate language and assigned to tags via selectors, the separation of content from presentation of that content could occur.  This was, and still is, one of the key motivations behind CSS.  Content doesn't really need to know about presentation and vice-versa, they are fundamentally different and somewhat orthogonal apects of the whole.  In real-world companies, the presentation of a company's web presence may be designed and managed by different people than the content.  
+                        </p>
+                        <p>
+                            In terms of front-end web design, this separation can hugely improve the manageability of complex website code and enable precise control of presentation across various websites.  It also allows vastly more presentation options over that of HTML.  Another motivation behind CSS is the ability to render the same content in a multitude of ways depending on user variables (eg. screen size, disabilities, browser).  This is beneficial as it moves all the complexity of adjusting presentation out of HTML.  This alone would be enough of a reason for CSS, as designing a website without CSS to work seamlessly over any end-user device out there would be very difficult.
+                        </p>
+                    </div>
+
+                    <h5 data-toggle="collapse" data-target="#p3" aria-expanded="false" aria-controls="p3">
+                        Selectors
+                    </h5>
+                    <div class="collapse multicollapse" id="p3">
+                        <p>
+                            The key to CSS is the selector.  CSS selector language is a way of filtering out a subset of tags from the HTML document for the application of some particular styling parameters.  We can basically select any tag via a combination of 8 selection paths:    
+                        </p>
+                        <ul>
+                            <li>tag selectors - select all tags of a specific type, eg. 
+                                <div class="card card-body bg-light snippet">
+                                    //selects any p tag<br/>
+                                    p {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                                <!--<span class="eg">p {color: red;}</span>-->
+                                <i>Note that we can also apply wildcards like * to the selector to widen the tag selection further.</i>
+                            </li>
+                            <li>group selectors - select all tags in the given comma separated list of tags, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects any p, span or i tag<br/>
+                                    p, span, i {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                                <i>Note that we could put any complex selector in a comma separated list, not just simple tags.</i>
+                            </li>
+                            <li>class selectors - select all tags that have a specific class assigned, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects any tag with class="some_class"<br/>
+                                    .some_class {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                            <li>id selectors - select all tags that have a specific id, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects any tag with id="some_id"<br/>
+                                    #some_id {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                            <li>attribute selectors - select all tags that have a specific attribute value, there are many attributes that can be selected apon, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects any tag with the attribute name="some_name"<br/>
+                                    [name="some_name"] {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                            <li>contextual selectors - select all tags based their postition relative to other tags in the HTML tree heirarchy, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //p has to be a descendant / child of a div<br/>
+                                    div p / div > p {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }<br/>
+                                    //p has to be an adjacent / general sibling of a div<br/>
+                                    div + p / div ~ p {<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                            <li>pseudo-class selectors - select all tags that have a specific state or relative position or property, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects any h2 tag that is currently in hover state, i.e. the mouse is positioned over the element<br/>
+                                    h2:hover {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }<br/>
+                                    /*selects any p tag that is the 3rd child of it's parent*/<br/>
+                                    p:nth-child(3) {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                            <li>pseudo-element selectors - select parts of tags, eg.
+                                <div class="card card-body bg-light snippet">
+                                    //selects the point just after the content of all p tags, so if you add content there, it gets this style<br/>
+                                    p::after {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }<br/>
+                                    //selects the part of the p tag that is currently selected by the user and applies this style<br/>
+                                    p::selection {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br/>
+                                    }
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h5 data-toggle="collapse" data-target="#p4" aria-expanded="false" aria-controls="p4">
+                        Tie-Breaking
+                    </h5>
+                    <div class="collapse multicollapse" id="p4">
+                        <p>
+                            The CSS cascading application rules are another critical part of CSS functionality.  When multiple CSS styles apply to an element, eg. the color style of a div tag.  The following precedence rules apply in order of importance:
+                        </p>
+                        <ol>
+                            <li>user-origin CSS</li>
+                            <li>inline CSS</li>
+                            <li>document level CSS</li>
+                            <li>external CSS</li>
+                        </ol>
+                        <p>
+                            In the case of same level ties, the type matters (eg. id beats class) and in the case of same level and type ties, the latest position wins.
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p5" aria-expanded="false" aria-controls="p5">
+                        The Box Model
+                    </h5>
+                    <div class="collapse multicollapse" id="p5">
+                        <p >
+                            The last critical feature of CSS is the box model, where all tags have a layered box surrounding the inner content. The box model consists of:
+                        </p>
+                        <ul>
+                            <li>Content - this is the innermost box and where the actual content is located</li>
+                            <li>Padding - the content padding, it is styled as the content area and is there to add space</li>
+                            <li>Border - the boundary between the inner content/padding area and the outer blank margin layer.  The border can be visible or hidden and comprehensively styled</li>
+                            <li>Margin - the transparent spacing between the border and the outermost postion of the tag which butts up against other outer margins of other tags</li>
+                        </ul>
+                        <p>
+                            <img class="inline" src="./images/box%20model.png" alt="The Box Model"/>
+                        </p>
+                    </div>
+
+                </div> <!--end of content-->
+
+                <div class="col-sm-2 r_side">
+                </div> <!--end of r_side-->
+
+            </div>  <!--end of main row-->
+
+            <div class="row">
+                <div class="col-sm-12 footer">
+                </div>
+            </div> <!--end of row-->
+
+        </div> <!--end of container-->
+
+
+        <!--################################################################-->
+        <!--bootstrap js imports-->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous">
+        </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- fontawsome icons-->
+        <script src="https://kit.fontawesome.com/029e93a038.js" crossorigin="anonymous"></script>
+
+        <!-- local js imports-->
+        <script src="./nathans_js.js"></script>
+    </body>
+</html>
+
+

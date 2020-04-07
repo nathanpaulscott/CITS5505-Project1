@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap css imports-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- local css imports-->
+        <link rel="stylesheet" type="text/css" href="./nathans_css.css"/>
+
+        <title>Project 1 - Nathan Scott</title>
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-sm-1 header_left align-self-start">
+                    HTML
+                </div>
+                <div class="col-sm-10 header_main align-self-center">
+                    HTML
+                </div>
+                <div class="col-sm-1 header_right align-self-start">
+                    <a href="./project1-bio.html"><i class="fas fa-home"></i></a>
+                </div>
+            </div> <!--end of row-->
+
+
+            <div class="row sticky-top">
+                <div class="col-sm-12 header_nav">
+                    <nav class="navbar navbar-dark navbar-expand-sm">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <!--<ul class="nav navbar-nav flex-column">-->
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="./project1-html.html">HTML</a></li>
+                                <li><a href="./project1-css.html">CSS</a></li>
+                                <li><a href="./project1-js.html">JS</a></li>
+                                <li><a href="./project1-bio.html">Bio</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 l_side">
+                </div> <!--end of l_side-->
+
+                <div class="col-sm-8 content">
+                    <div class="sticky-top">
+                        <button id="collapse_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-up"></i>
+                        </button>
+                        <button id="expand_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+
+                    <img class="inline-float" src="./images/html.png" alt="HTML Logo"/>
+                    <h2>HTML - History and Evolution</h2>
+                    
+                    <h5 data-toggle="collapse" data-target="#p1" aria-expanded="false" aria-controls="p1">
+                        What is HTML
+                    </h5>
+                    <div class="collapse multicollapse" id="p1">
+                        <p>
+                            HTML (Hyper Text Markup Language) is a simple text-based scripting language that is used to specify content and structure of client-side web sites.  It works in harmony with CSS for sytle and Javascript for functionality.  HTML essentially allows the specification of hierarchical tree structures where the nodes are known as tags.
+                        </p>
+                        <p>
+                            The fundamental structure of all webpages are the 'HTML' tag as the root node, then 2 children:
+                        </p>
+                        <ul>
+                            <li>head for meta data and setup information and code</li>
+                            <li>body for the main content of the webpage</li>
+                        </ul>
+                        <p>
+                            <img class="inline" src="./images/html%20hierarchy.gif" alt="HTML Heirarchy"/><br/>
+                            Tags are typically specified with an opening and closing pair of angle brackets with the displayed content found between, eg.
+                        </p>
+                        <div class="card card-body bg-light snippet">
+                            &lt;div&gt;<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                some content here<br/>
+                                &lt;/div&gt;
+                        </div>
+                        <p>
+                            Different tag types can have different structural properties such as <span class="eg">&lt;div&gt;</span> for containers, <span class="eg">&lt;h&gt;</span> and <span class="eg">&lt;p&gt;</span> for text, <span class="eg">&lt;img&gt;</span> for images and <span class="eg">&lt;button&gt;</span> for buttons.  One of the key differentiators is whether a tag is typically displayed inline (on the same line) or block (on a new line).  Most tags are block by default, but a few like <span class="eg">&lt;span&gt;</span> and <span class="eg">&lt;i&gt;</span> are inline by default.  CSS is required to change this default behaviour.
+                        </p>
+                        <p>
+                            Attributes of a tag like Id, name, style and event handlers are found in the opening tag, while the closing tag simply serve to close off that tag's block of code, eg.
+                        </p>
+                        <div class="card card-body bg-light snippet">
+                            &lt;h5 id="test2" data-toggle="collapse" data-target="#p2" aria-expanded="false" aria-controls="p2"&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            some more content<br/>
+                            &lt;/h5&gt;
+                        </div>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p2" aria-expanded="false" aria-controls="p2">
+                        HTML 1.0
+                    </h5>
+                    <div class="collapse multicollapse" id="p2">
+                        <p>
+                            HTML 1.0 was initially developed by physicist Time Berners-Lee in the 80's and realeased in 1989 as part of a technology suite aimed at enabling physicists to work together.  Tim is also widely known as one of the creators of the internet.  HTML 1.0 was used from 1989 to 1994, this was a very simple predecessor of modern HTML.  It contained around 20 elements and it had no CSS.  There were no tables or forms.  It is interesting to note that HTML was heavily influenced by SGML which was a markup language used in-house at CERN, his place of work.
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p3" aria-expanded="false" aria-controls="p3">
+                        HTML 2.0
+                    </h5>
+                    <div class="collapse multicollapse" id="p3">
+                        <p>
+                            Created by an IETF working group to standardise HTML.  It was released in 1995.  HTML 2.0 became the standard for HTML against which all browsers were measured.  Many of the improvements involved adjusting style, but also added tables and forms.  
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p4" aria-expanded="false" aria-controls="p4">
+                        HTML 3.0
+                    </h5>
+                    <div class="collapse multicollapse" id="p4">
+                        <p>
+                            The World Wide Web Consortium (W3C) came to prominance in the mid 90's and overtook development of HTML as W3C had powerful commerical backers as opposed to the IETF.  HTML 3.0 was the first HTML standard endorsed by W3C, it was released in 1997.  It was supported by Netscape Navigator and Internet Exporer, two of the big players in browser technology at the time. 
+                        </p>
+                    </div>
+
+                    <h5 data-toggle="collapse" data-target="#p5" aria-expanded="false" aria-controls="p5">
+                        HTML 4.0
+                    </h5>
+                    <div class="collapse multicollapse" id="p5">
+                        <p>
+                            In 1999 HTML 4.0 was released which included the first iteration of CSS which marked the spearation of content and style.  In 2000 HTML became an ISO standard as well.
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p6" aria-expanded="false" aria-controls="p6">
+                        HTML 5.0
+                    </h5>
+                    <div class="collapse multicollapse" id="p6">                        
+                        <p>
+                            Fianlly HTML 5.0 was released in 2014.  This essentially brought the specification of HTML to completion, however minor releases have been made since then.
+                        </p>
+                    </div>                        
+                </div> <!--end of content-->
+
+                <div class="col-sm-2 r_side">
+                </div> <!--end of r_side-->
+
+            </div>  <!--end of main row-->
+
+            <div class="row">
+                <div class="col-sm-12 footer">
+                </div>
+            </div> <!--end of row-->
+
+        </div> <!--end of container-->
+
+
+        <!--################################################################-->
+        <!--bootstrap js imports-->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous">
+        </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- fontawsome icons-->
+        <script src="https://kit.fontawesome.com/029e93a038.js" crossorigin="anonymous"></script>
+
+        <!-- local js imports-->
+        <script src="./nathans_js.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- css imports-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- local css imports-->
+        <link rel="stylesheet" type="text/css" href="./nathans_css.css"/>
+
+        <title>Project 1 - Nathan Scott</title>
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-sm-1 header_left align-self-start">
+                    JS
+                </div>
+                <div class="col-sm-10 header_main align-self-center">
+                    JavaScript
+                </div>
+                <div class="col-sm-1 header_right align-self-start">
+                    <a href="./project1-bio.html"><i class="fas fa-home"></i></a>
+                </div>
+            </div> <!--end of row-->
+
+
+            <div class="row sticky-top">
+                <div class="col-sm-12 header_nav">
+                    <nav class="navbar navbar-dark navbar-expand-sm">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <!--<ul class="nav navbar-nav flex-column">-->
+                            <ul class="nav navbar-nav">
+                                <li><a href="./project1-html.html">HTML</a></li>
+                                <li><a href="./project1-css.html">CSS</a></li>
+                                <li class="active"><a href="./project1-js.html">JS</a></li>
+                                <li><a href="./project1-bio.html">Bio</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 l_side">
+                </div> <!--end of l_side-->
+
+                <div class="col-sm-8 content">
+                    <div class="sticky-top">
+                        <button id="collapse_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-up"></i>
+                        </button>
+                        <button id="expand_text" class="btn btn-light rounded exp-col" type="button">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+
+                    <img class="inline-float" src="./images/javascript.png" alt="JavaScript Logo"/>
+                    <h2>JS - Purpose and Evolution</h2>
+                    
+                    <h5 id="test" data-toggle="collapse" data-target="#p1" aria-expanded="false" aria-controls="p1">
+                        What is JS
+                    </h5>
+                    <div class="collapse multicollapse" id="p1">
+                        <p>
+                            JS (JavaScript) is an interpreted, dynamically/weakly typed, multi-paradigm scripting language with first class functions.  JS offers the functionality component to the triad of HTML-CSS-JS.  JS has become indespensible for browser interactivity and is universally supported by all browser software and has seamless integration into the DOM structure.  JavaScript is not only found client-side, it is also behind node.js which is a powerful non-blocking server-side technology.  Syntactically, JS looks similar to C or Java.  
+                        </p>
+                    </div>
+
+                    <h5 id="test2" data-toggle="collapse" data-target="#p2" aria-expanded="false" aria-controls="p2">
+                        Browser Wars
+                    </h5>
+                    <div class="collapse multicollapse" id="p2">                        
+                        <p>
+                            JS was created by Brendan Eich for Netscape in 1995 while attempting to integrate a scripting language into their browser in order to add client-side interactivity.  One of the criteria was for it to be syntactically similar to Java despite the language being fundamentally different.  The name JavaScript is more of a marketing decision due to Java being popular in the mid 90's.
+                        </p>
+                        <p>
+                            The first standardised version of JavaScript released by ECMA in 1997.  It was hoped this would help to stop the browser war between Netscape and Internet Explorer which used mircrosoft's scripting language JScript.  However Microsoft pushed Internet Explorer with it's full financial might in the late 90's which extended the JavaScript/JScript war despite ECMA releasing further refinements and iterations of JavaScript.  This all led to the stagnation of in-browser scripting technology in the early 2000s.<br/>
+                            <i class="ref">Chart Sources: GVU WWW User Survey, TheCounter.com, UIUC Web Server, Websidestory</i>
+                            <img class="inline" src="./images/browser%20wars1.jpg" alt="Browser Wars Act 1"/>
+                            <i class="fig-title">Browser Wars Act 1: 1994-2008</i>
+                        </p>
+                        <p>
+                            Around 2004 there was a change in the browser landscape.  Firstly, Mozilla (which was co-founded by Eich in the late 90's) started to gain traction in the broswer market and take share from Microsoft.  Secondly, developments in the open-source community with Ajax and the ability to update content without page reloads, saw a re-emergence of Javascript to the fore of the client-side web development community.  As a result, a rich supply of libraries were created, such as JQuery, which added considerably to the usability and functionality of JavaScript.<br/>
+                            <i class="ref">Chart Source: StatCounter</i>
+                            <img class="inline" src="./images/browser%20wars2.png" alt="Browser Wars Act 2"/>
+                            <i class="fig-title">Browser Wars Act 2: 2008-2019</i>
+                        </p>
+                        <p>
+                            The final push for Javascript came in 2008, with the rise of Google and the release of the Chrome browser which included a new powerful interpreter engine for JS.  This sparked an industry wide scramble to update browser interpreter engines.  ECMAScript5 was released the same year as a global standard.  ECMAscript5 was refined until ECMAScript6 was released in 2015 which is not too dissimilar to the version used today where single page websites are becoming common and there is an incredibly rich set of libraries for providing a bewildering selection of browser functionality and interactivity.   
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p3" aria-expanded="false" aria-controls="p3">
+                        Applications - Ajax
+                    </h5>
+                    <div class="collapse multicollapse" id="p3">                        
+                        <p>
+                            Ajax gives the ability for a webpage to interact with a server without page reloading.  This was a game changer back when it was developed in 2005.  Ajax introduces asynchronous callback functionality for HTTP requests.  This allows webpages to continue unimpeded while the HTTP communications go on in the background despite the fact that JavaScript is single threaded.
+                            <br/><i class="ref">Image Sources: UWA Lectures, OpenCart, myself</i>
+                            <img class="inline" src="./images/ajax.png" alt="Asynchronous JS"/>
+                            <i class="fig-title">Asynchronous Ajax</i>
+                            Examples of where Ajax has been so influential are in online chat, help and social media type platforms, online mapping applications like google maps and whenever server-side form validation is required.
+                        </p>  
+                        <p>
+                            Here is an example of page updating via Ajax, we update the field every 5s from an external source that allows CORS: <i class="ref">(NOTE: source updates itself every 24hrs)</i>
+                        </p>
+                        <p>
+                            <span class="ajax_text"><span>Current Corona Virus Death Tally:&nbsp;&nbsp;</span><span id="ajax">connecting...</span></span>
+                            <br/><i class="ref" id="ajax_debug"></i>
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p4" aria-expanded="false" aria-controls="p4">
+                        Applications - Interaction and Dynamic Content
+                    </h5>
+                    <div class="collapse multicollapse" id="p4">
+                        <p>
+                            Interactive page elements as well as animations greatly enhance the end user experience.  The following simple example uses the Jquery-ui library to enable a list to be sorted manually by clicking/touching and dragging the list elements.
+                        </p>
+                        <div>
+                            Fruit List: <i class="ref">(Please click and drag the list items)</i>
+                            <ul id="sortable">
+                                <li>Apple</li>
+                                <li>Orange</li>
+                                <li>Pear</li>
+                                <li>Grape</li>
+                                <li>Guava</li>
+                            </ul>
+                            The updated list elements are:<br/>
+                            <div id="list" onload="start_list()"></div>
+                        </div>
+                        <p>
+                            Another example is in the expanding/collapsing sections of this page.  By clicking on a section header, you can show/hide content.  There are also 2 buttons on the top right of the screen that allow you to force all sections to be expanded or collapsed regardless of current state.  All this is achieved primarily via JavaScript.
+                        </p>
+                    </div>
+                    
+                    <h5 data-toggle="collapse" data-target="#p5" aria-expanded="false" aria-controls="p5">
+                        Applications - Validation
+                    </h5>
+                    <div class="collapse multicollapse" id="p5">                        
+                        <p>
+                            Humans are messy.  When it comes to getting into a computer via a human, validation is required.  There will be cases where user input needs to be vetted on a server-side database.  But in cases where it doesn't, we can validate input via HTML or JavaScript.  The later will give more flexibility in designing validation systems.  With HTML5 supporting regex, it can handle most simple form based cases.  However, HTML still limits you to clunky forms which are not always the ideal medium for gathering human input data, esspecially when the form gets beyond 5 or so fields, and especially when it starts spanning multiple pages.  JavaScript has far less limitations, we can validate input from forms but also from textfiles and possibly other more exotic input formats.  The following example shows a basic textfile parsing input validator using javascript.  However, it can be used to accept 1000s of complex user parameters with one click, as opposed to annoying webforms.   
+                        </p>
+                        <div class="card card-body bg-light">
+                            <h5 class="bg-light" style="color:rgb(255,128,0)">
+                                Bulk Data Input
+                            </h5>
+                            <!--This is hidden popover content only visible on hover over the popover element-->
+                            <div id="instructions-pop-content" style="display: none">
+                                You need to give a text file in the correct format:
+                                <ul>
+                                    <li>one line per parameter</li>
+                                    <li>line format must be: name:value</li>
+                                    <li>parameter names: Name, DOB, Citizenship, Age</li>
+                                    <li>all parameter names MUST be present, in any order</li>
+                                    <li>only accepted characters are alphanumeric => A to Z, a to z, 0 to 9, space, _ and /</li>
+                                    <li>eg.
+                                        <br/>Name: John Connor
+                                        <br/>DOB: 03/06/2014
+                                        <br/>Citizenship: United States
+                                        <br/>Age: 34
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-warning instructions-pop" data-toggle="popover" title="Instructions">Instructions</button>
+                            <input type="file" name="textfile" id="textfile" size="26"/>
+                            <br/><div class="bg-light" id="bulk-input" style="text-align:left"></div>
+                        </div>
+                    </div>
+
+                    <h5 data-toggle="collapse" data-target="#p6" aria-expanded="false" aria-controls="p6">
+                        Applications - Data Gathering
+                    </h5>
+                    <div class="collapse multicollapse" id="p6">
+                        <p>
+                            JavaScript is also used for data gathering, which is probably perceived as a negative thing by end users and obviously highly valued by businesses.  Data gathering involves things like tracking a users browsing history and location, but could get far more complex and invasive.  In this <a href="https://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/">article</a> the user disabled JavaScript for 1 week, it gives some insight into the pervasivness of modern javascript and also the link it has to advertising. 
+                        </p>                        
+                    </div>
+                </div> <!--end of content-->
+
+                <div class="col-sm-2 r_side">
+                </div> <!--end of r_side-->
+
+            </div>  <!--end of main row-->
+
+            <div class="row">
+                <div class="col-sm-12 footer">
+                </div>
+            </div> <!--end of row-->
+
+        </div> <!--end of container-->
+
+
+        <!--################################################################-->
+        <!--js imports-->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous">
+        </script>
+
+        <!--This fix hosted on the website locally fixes the jquery-ui sortable with touch devices issue-->
+        <script src="jquery.ui.touch-punch.min.js"></script>
+        
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        
+        <script 
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <!-- fontawsome icons-->
+        <script src="https://kit.fontawesome.com/029e93a038.js" crossorigin="anonymous"></script>
+
+        <!-- local js imports-->
+        <script src="./nathans_js.js"></script>
+    </body>
+</html>
+
+
