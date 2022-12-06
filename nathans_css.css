@@ -110,14 +110,14 @@ div.header_left {
 }
 
 
-div.header_right, div.header_right i.fa-home {
+div.header_right, div.header_right i {
 	text-align:center;
 	color:grey;
 	background-color:rgb(60,60,60);
 	padding-top:2px;
 }
 
-div.header_right i.fa-home:hover {
+div.header_right i:hover {
 	text-align:center;
 	color:rgb(255,128,0);
 	background-color:rgb(60,60,60);
